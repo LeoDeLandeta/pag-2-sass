@@ -1,0 +1,79 @@
+@use 'mixins';
+
+.contact{
+    background: #f5576c;
+    color: #fff;
+}
+.content{
+   
+    h2{
+        font-weight: 300;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &-input{
+            background: transparent;
+            border:0;
+            color:#fff;
+            outline: none;
+            border: 1px solid #fff;
+            padding: 20px 10px;
+        }
+        &-input::placeholder{
+            color: #fff;
+            font-family: "raleway";
+        }
+        input[type="text"],
+        input[type="email"]{
+             display: inline-block;
+             width: 49%;
+             margin-bottom: 30px;
+
+        }
+        &-input-textarea{
+           width: 100%;
+           margin-bottom: 15px;
+           background: transparent;
+           border:0;
+           outline: none;
+           border: 1px solid #fff;
+           padding: 20px 10px;
+    
+        }
+        &-input-textarea::placeholder{
+            color: #fff;
+        }
+        input[type="submit"]{
+            width: 120px;
+            text-align: center;
+            padding: 14px 0;
+            background: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+            transition: all 1s;
+        }
+        input[type="submit"]:hover{
+            cursor: pointer;
+            color: #f5576c;
+            border: 1px solid #f5576c;
+            background: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .content__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input[type="text"],
+        input[type="email"]{
+            width: 100%;
+        }
+    }
+}

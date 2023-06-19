@@ -1,0 +1,14 @@
+@use 'initial';
+@use 'variables';
+@use 'header';
+@use 'wave';
+@use 'mixins';
+@use 'card';
+@use 'gallery';
+@use 'info';
+@use 'footer';
+
+body{
+    font-family: 'Raleway', sans-serif;
+    ;
+}

@@ -1,0 +1,57 @@
+
+.hero{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fd9f8557 100%), url('../img/header.jpg');
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    &__text{
+        height: 500px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 60px;
+        }
+        p{
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        a{
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 15px;
+            background: #a18cd2;
+            border-radius: 8px;
+            color: #fff;
+            transition: all 0.7s;
+        }
+        a:hover{
+            cursor: pointer;
+            text-decoration: underline;
+            padding: 15px 20px;
+        }
+        &__svg{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .hero{
+        &__text{
+            h1{
+                text-align: center;
+            }
+        }
+    }
+}
